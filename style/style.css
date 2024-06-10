@@ -1,43 +1,5 @@
 body {
-  display: block;
   margin: 0;
-}
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-    url(../img/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  padding: 210px 0;
-  text-align: center;
-}
-header h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color: white;
-  margin: 0;
-  text-align: center;
-  font-size: 35px;
-}
-.content-wrapper,
-section {
-  margin: 0 60px;
-}
-
-section h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 16px;
-  margin: 50px 0 10px 0;
-  text-align: center;
-}
-section h3 {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 40px;
-  margin: 5px 0 45px 0;
-  text-align: center;
 }
 
 h1 {
@@ -50,11 +12,20 @@ h1 {
   font-size: 96px;
   margin: 30px 0 5px 0;
 }
-p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color: rgb(42, 41, 41);
-  margin: 10px 0;
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 5px 0 15px 0;
+  text-align: center;
 }
 
 h4 {
@@ -72,31 +43,36 @@ h5 {
   margin: 15px 0 5px 0;
 }
 
-footer {
-  padding: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-    url(../img/movies.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 40px 0 0 0;
-}
-
-footer h3 {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: white;
-  text-align: left;
-  margin: 5px 0 15px 0;
-}
-
-footer p {
-  color: white;
-}
-footer a {
+p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: rgb(193, 191, 191);
+  color: rgb(42, 41, 41);
+  margin: 10px 0;
+}
+
+/*Hero*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 210px 0;
+  text-align: center;
+}
+header h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-size: 35px;
+}
+
+/*Sections*/
+
+section {
+  padding: 20px 60px;
 }
 
 .learn-more {
@@ -112,6 +88,18 @@ footer a {
   text-decoration: none;
   background: #8c2b4a;
 }
+
+.trilogy {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(../img/jess-suspiria-1977.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/*Grids*/
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -126,6 +114,8 @@ footer a {
 .grid-3-col-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
+
+/*Images*/
 .label {
   /* background: #ec6f97;*/
   background: #8c2b4a;
@@ -138,25 +128,13 @@ footer a {
   margin: 0;
 }
 .image-wrapper {
-  margin: 45px 0;
+  margin: 0 0;
 }
 .img-responsive {
   width: 100%;
   display: block;
 }
-.secondary {
-  color: white;
-}
-.secondary h2 {
-  padding: 20px 0;
-}
-.trilogy {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-    url(../img/jess-suspiria-1977.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-}
+/*Videos*/
 
 .card {
   background-color: white;
@@ -177,8 +155,86 @@ footer a {
   aspect-ratio: 16 / 9;
   border-radius: 8px 8px 0 0;
 }
+
 .embed-video-2 {
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 8px;
+}
+
+/*List*/
+ul {
+  padding: 0;
+  margin: 0;
+}
+/*Footer*/
+footer {
+  padding: 25px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(../img/movies.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+footer h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  margin: 5px 0 15px 0;
+}
+
+footer p {
+  color: white;
+}
+footer a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgb(193, 191, 191);
+}
+
+.footer-wrapper {
+  margin: 0 30px;
+}
+
+/*Responsive*/
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  header h2 {
+    font-size: 16px;
+  }
+  .learn-more {
+    padding: 12px 28px;
+    margin-top: 32px;
+  }
+
+  .grid {
+    grid-gap: 32px;
+  }
+  .grid-2-col,
+  .grid-3-col,
+  .grid-3-col-with-first-narrow {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  section {
+    padding: 20px 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
 }

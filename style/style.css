@@ -105,11 +105,11 @@ section {
 /*Grids*/
 .grid {
   display: grid;
-  grid-gap: 64px;
+  grid-gap: 30px;
 }
 .grid-2-col {
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 .grid-3-col {
   grid-template-columns: 1fr 1fr 1fr;
@@ -237,14 +237,10 @@ footer a {
     margin-top: 32px;
   }
 
-  .grid {
-    grid-gap: 32px;
-  }
   .grid-2-col,
   .grid-3-col,
   .grid-3-col-with-first-narrow {
     grid-template-columns: 1fr;
-    grid-gap: 10px;
   }
 
   section {

@@ -173,7 +173,7 @@ ul {
 /*Footer*/
 footer {
   padding: 25px 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../img/movies.webp);
   background-repeat: no-repeat;
   background-size: cover;

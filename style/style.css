@@ -1,6 +1,6 @@
 body {
   display: block;
-  margin: 8px;
+  margin: 0;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
@@ -11,6 +11,35 @@ header {
   padding: 210px 0;
   text-align: center;
 }
+header h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-size: 35px;
+}
+.content-wrapper,
+section {
+  margin: 0 60px;
+}
+
+section h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 50px 0 10px 0;
+  text-align: center;
+}
+section h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 5px 0 45px 0;
+  text-align: center;
+}
+
 h1 {
   text-align: center;
   font-family: "Playfair Display", serif;
@@ -28,14 +57,46 @@ p {
   margin: 10px 0;
 }
 
-header h2 {
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 15px 0 5px 0;
+}
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 15px 0 5px 0;
+}
+
+footer {
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(../img/movies.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 40px 0 0 0;
+}
+
+footer h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  margin: 5px 0 15px 0;
+}
+
+footer p {
+  color: white;
+}
+footer a {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: white;
-  margin: 0;
-  text-align: center;
-  font-size: 35px;
+  color: rgb(193, 191, 191);
 }
+
 .learn-more {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -49,40 +110,19 @@ header h2 {
   text-decoration: none;
   background: #8c2b4a;
 }
-section h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 16px;
-  margin: 50px 0 10px 0;
-}
-section h3 {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 40px;
-  margin: 5px 0 15px 0;
-}
-h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  margin: 15px 0 5px 0;
-}
-h5 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  margin: 15px 0 5px 0;
-}
 .grid {
   display: grid;
   grid-gap: 64px;
 }
 .grid-2-col {
   grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
 }
 .grid-3-col {
   grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-3-col-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 .label {
   /* background: #ec6f97;*/
@@ -102,25 +142,23 @@ h5 {
   width: 100%;
   display: block;
 }
-.secondary h3 {
-  text-align: center;
+.secondary {
   color: white;
 }
 .secondary h2 {
   padding: 20px 0;
-  text-align: center;
-  color: white;
 }
-.secondary {
+.trilogy {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
     url(../img/jess-suspiria-1977.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
 }
+
 .card {
   background-color: white;
-  margin: 20px 10px;
+  margin: 0 10px 20px 10px;
   border-radius: 10px;
 }
 .card-body {
@@ -136,4 +174,9 @@ h5 {
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 8px 8px 0 0;
+}
+.embed-video-2 {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
 }

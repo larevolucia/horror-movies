@@ -58,9 +58,7 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
     url(../img/hero.jpg);
   background-repeat: no-repeat;
-  width: 100%;
   background-size: cover;
-  margin: 0;
   padding: 210px 0;
   text-align: center;
 }
